@@ -1,0 +1,266 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.10/ http://www.mediawiki.org/xml/export-0.10.xsd" version="0.10" xml:lang="nl">
+  <siteinfo>
+    <sitename>Wikipedia</sitename>
+    <dbname>nlwiki</dbname>
+    <base>http://nl.wikipedia.org/wiki/Hoofdpagina</base>
+    <generator>MediaWiki 1.25wmf14</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Speciaal</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Overleg</namespace>
+      <namespace key="2" case="first-letter">Gebruiker</namespace>
+      <namespace key="3" case="first-letter">Overleg gebruiker</namespace>
+      <namespace key="4" case="first-letter">Wikipedia</namespace>
+      <namespace key="5" case="first-letter">Overleg Wikipedia</namespace>
+      <namespace key="6" case="first-letter">Bestand</namespace>
+      <namespace key="7" case="first-letter">Overleg bestand</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">Overleg MediaWiki</namespace>
+      <namespace key="10" case="first-letter">Sjabloon</namespace>
+      <namespace key="11" case="first-letter">Overleg sjabloon</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Overleg help</namespace>
+      <namespace key="14" case="first-letter">Categorie</namespace>
+      <namespace key="15" case="first-letter">Overleg categorie</namespace>
+      <namespace key="100" case="first-letter">Portaal</namespace>
+      <namespace key="101" case="first-letter">Overleg portaal</namespace>
+      <namespace key="446" case="first-letter">Onderwijsprogramma</namespace>
+      <namespace key="447" case="first-letter">Overleg onderwijsprogramma</namespace>
+      <namespace key="828" case="first-letter">Module</namespace>
+      <namespace key="829" case="first-letter">Overleg module</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>A</title>
+    <ns>0</ns>
+    <id>1</id>
+    <revision>
+      <id>2</id>
+      <parentid>1</parentid>
+      <timestamp>2014-12-02T12:43:02Z</timestamp>
+      <contributor>
+        <username>Foo</username>
+        <id>42</id>
+      </contributor>
+      <comment>Example Page</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit iure libero id, omnis assumenda dicta ab amet. Eligendi eius minus pariatur aspernatur, dignissimos odio voluptatum, consequuntur ea. Quos, at, non.
+      </text>
+      <sha1>bar</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>B</title>
+    <ns>0</ns>
+    <id>2</id>
+    <revision>
+      <id>4</id>
+      <parentid>3</parentid>
+      <timestamp>2014-12-02T12:43:02Z</timestamp>
+      <contributor>
+        <username>Foo</username>
+        <id>42</id>
+      </contributor>
+      <comment>Example Page 2</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit iure libero id, omnis assumenda dicta ab amet. Eligendi eius minus pariatur aspernatur, dignissimos odio voluptatum, consequuntur ea. Quos, at, non [[C]].
+      </text>
+      <sha1>bar</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>C</title>
+    <ns>0</ns>
+    <id>3</id>
+    <revision>
+      <id>6</id>
+      <parentid>5</parentid>
+      <timestamp>2014-12-02T12:43:02Z</timestamp>
+      <contributor>
+        <username>Foo</username>
+        <id>42</id>
+      </contributor>
+      <comment>Example Page 3</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">
+        Lorem ipsum dolor sit amet, consectetur [[B]] adipisicing elit. Odit iure libero id, omnis assumenda dicta ab amet. Eligendi eius minus pariatur aspernatur, dignissimos odio voluptatum, consequuntur ea. Quos, at, non.
+      </text>
+      <sha1>bar</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>D</title>
+    <ns>0</ns>
+    <id>4</id>
+    <revision>
+      <id>8</id>
+      <parentid>7</parentid>
+      <timestamp>2014-12-02T12:43:02Z</timestamp>
+      <contributor>
+        <username>Foo</username>
+        <id>42</id>
+      </contributor>
+      <comment>Example Page 4</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">
+        Lorem ipsum dolor [[A]] sit amet, consectetur adipisicing elit. Odit iure libero id, omnis assumenda dicta ab amet. Eligendi eius minus [[B|Some Fancy Name For B]] pariatur aspernatur, dignissimos odio voluptatum, consequuntur ea. Quos, at, non.
+      </text>
+      <sha1>bar</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>E</title>
+    <ns>0</ns>
+    <id>5</id>
+    <revision>
+      <id>10</id>
+      <parentid>9</parentid>
+      <timestamp>2014-12-02T12:43:02Z</timestamp>
+      <contributor>
+        <username>Foo</username>
+        <id>42</id>
+      </contributor>
+      <comment>Example Page 5</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">
+        Lorem ipsum dolor [[B]] sit amet, consectetur adipisicing elit. Odit iure libero id, omnis assumenda dicta ab amet. Eligendi eius minus [[D|Some Fancy Name For D]] pariatur aspernatur, dignissimos odio voluptatum, consequuntur ea. Quos, at, non [[F]].
+      </text>
+      <sha1>bar</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>F</title>
+    <ns>0</ns>
+    <id>6</id>
+    <revision>
+      <id>12</id>
+      <parentid>11</parentid>
+      <timestamp>2014-12-02T12:43:02Z</timestamp>
+      <contributor>
+        <username>Foo</username>
+        <id>42</id>
+      </contributor>
+      <comment>Example Page 5</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">
+        Lorem ipsum dolor [[E]] sit amet, consectetur adipisicing elit. Odit iure libero id, omnis assumenda dicta ab amet. Eligendi eius minus pariatur aspernatur, dignissimos odio voluptatum, consequuntur ea. Quos, at, non [[B]].
+      </text>
+      <sha1>bar</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>G</title>
+    <ns>0</ns>
+    <id>7</id>
+    <revision>
+      <id>12</id>
+      <parentid>11</parentid>
+      <timestamp>2014-12-02T12:43:02Z</timestamp>
+      <contributor>
+        <username>Foo</username>
+        <id>42</id>
+      </contributor>
+      <comment>Example Page 6</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">
+        Lorem ipsum dolor [[E]] sit amet, consectetur adipisicing elit. Odit iure libero id, omnis assumenda dicta ab amet. Eligendi eius minus pariatur aspernatur, dignissimos odio voluptatum, consequuntur ea. Quos, at, non [[B]].
+      </text>
+      <sha1>bar</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>H</title>
+    <ns>0</ns>
+    <id>8</id>
+    <revision>
+      <id>14</id>
+      <parentid>13</parentid>
+      <timestamp>2014-12-02T12:43:02Z</timestamp>
+      <contributor>
+        <username>Foo</username>
+        <id>42</id>
+      </contributor>
+      <comment>Example Page 7</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">
+        Lorem ipsum dolor [[E]] sit amet, consectetur adipisicing elit. Odit iure libero id, omnis assumenda dicta ab amet. Eligendi eius minus pariatur aspernatur, dignissimos odio voluptatum, consequuntur ea. Quos, at, non [[B]].
+      </text>
+      <sha1>bar</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>I</title>
+    <ns>0</ns>
+    <id>9</id>
+    <revision>
+      <id>16</id>
+      <parentid>15</parentid>
+      <timestamp>2014-12-02T12:43:02Z</timestamp>
+      <contributor>
+        <username>Foo</username>
+        <id>42</id>
+      </contributor>
+      <comment>Example Page 8</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">
+        Lorem ipsum dolor [[E]] sit amet, consectetur adipisicing elit. Odit iure libero id, omnis assumenda dicta ab amet. Eligendi eius minus pariatur aspernatur, dignissimos odio voluptatum, consequuntur ea. Quos, at, non [[B]].
+      </text>
+      <sha1>bar</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>J</title>
+    <ns>0</ns>
+    <id>10</id>
+    <revision>
+      <id>18</id>
+      <parentid>17</parentid>
+      <timestamp>2014-12-02T12:43:02Z</timestamp>
+      <contributor>
+        <username>Foo</username>
+        <id>42</id>
+      </contributor>
+      <comment>Example Page 9</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">
+        Lorem ipsum dolor [[E]] sit amet, consectetur adipisicing elit. Odit iure libero id, omnis assumenda dicta ab amet. Eligendi eius minus pariatur aspernatur, dignissimos odio voluptatum, consequuntur ea. Quos, at, non.
+      </text>
+      <sha1>bar</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>K</title>
+    <ns>0</ns>
+    <id>11</id>
+    <revision>
+      <id>20</id>
+      <parentid>19</parentid>
+      <timestamp>2014-12-02T12:43:02Z</timestamp>
+      <contributor>
+        <username>Foo</username>
+        <id>42</id>
+      </contributor>
+      <comment>Example Page 10</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">
+        Lorem ipsum dolor [[E]] sit amet, consectetur adipisicing elit. Odit iure libero id, omnis assumenda dicta ab amet. Eligendi eius minus pariatur aspernatur, dignissimos odio voluptatum, consequuntur ea. Quos, at, non.
+      </text>
+      <sha1>bar</sha1>
+    </revision>
+  </page>
+</mediawiki>

@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
 public class PageLinksParseMapper extends Mapper<LongWritable, Text, Text, Text> {
 
     //The regular expression used to identify link and isolate their contents
-    private static final Pattern linksSyntax = Pattern.compile("(?<=[\\[]).+?(?=[\\]])");
+    private static final Pattern linksSyntax = Pattern.compile("(?<=[\\[]{2}).+?(?=[\\]])");
 
     @Override
     public void map(LongWritable key, Text page, Context context) throws IOException, InterruptedException {
@@ -48,18 +48,11 @@ public class PageLinksParseMapper extends Mapper<LongWritable, Text, Text, Text>
     private String parseLink(String link){
         if(isInvalidLink(link)) return null;
 
-        boolean doubleBrackets = link.charAt(0) == '[';
-
-        int linkStart;
+        int linkStart = 0;
         int linkEnd = link.length()-1;
 
-        if(doubleBrackets) {
-            linkStart = 1;
-            int pipePosition = link.indexOf("|");
-            linkEnd = (pipePosition > linkStart) ? pipePosition : linkEnd;
-        } else {
-            linkStart = 0;
-        }
+        int pipePosition = link.indexOf("|");
+        linkEnd = (pipePosition > linkStart) ? pipePosition : linkEnd;
 
         int part = link.indexOf("#");
         linkEnd = (part > linkStart) ? part : linkEnd;
@@ -104,17 +97,14 @@ public class PageLinksParseMapper extends Mapper<LongWritable, Text, Text, Text>
     }
 
     private boolean isInvalidLink(String link) {
-        boolean doubleBrackets = link.charAt(0) == '[';
-        int linkStart = doubleBrackets ? 1 : 0;
-
-        int minLength = doubleBrackets ? 3 : 1;
+        int minLength = 1;
         int maxLength = 100;
 
         if( link.length() < minLength || link.length() > maxLength) return true;
-        char firstChar = link.charAt(linkStart);
+        char firstChar = link.charAt(0);
         
         if( firstChar == '#' || firstChar == ',' || firstChar == '.' || firstChar == '&' || firstChar == '\'' ||
-                firstChar == '-' || firstChar == '{' ) return true;
+                firstChar == '-' || firstChar == '{' || firstChar =='|') return true;
         
         return ( link.contains(":") || link.contains(",") ||
                 (link.indexOf('&') > 0) && !(link.substring(link.indexOf('&')).startsWith("&amp;")));
