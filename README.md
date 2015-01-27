@@ -47,7 +47,7 @@ The java program with which you have been provided consists of three hadoop jobs
 The `parse` job is provided for you, and merely captures the outgoing links from each article in the dataset.
 
 #####Calculate
-The `calculate` job should calculate Pagerank, or _PR(A)_ using a simple iterative algorithm as an alternative to the matrix based techniques you have seen in the lecture.
+The `calculate` job should calculate Pagerank, or _PR(A)_ using a simple iterative algorithm as an alternative interpretation of the matrix based techniques you have seen in the lecture.
 
 Quoting from the [original Google paper](http://ilpubs.stanford.edu:8090/422/1/1999-66.pdf), PageRank is defined like this:
 
