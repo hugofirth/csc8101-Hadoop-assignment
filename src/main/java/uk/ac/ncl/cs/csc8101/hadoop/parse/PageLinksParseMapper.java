@@ -49,7 +49,7 @@ public class PageLinksParseMapper extends Mapper<LongWritable, Text, Text, Text>
         if(isInvalidLink(link)) return null;
 
         int linkStart = 0;
-        int linkEnd = link.length()-1;
+        int linkEnd = link.length();
 
         int pipePosition = link.indexOf("|");
         linkEnd = (pipePosition > linkStart) ? pipePosition : linkEnd;

@@ -138,5 +138,21 @@ When you are happy with the output of your code, you should submit the following
 
 I will maintain a list of frequently asked questions below. If you have a question for a demonstrator, please check here first.
 
+**Question**: If the `calculate` job is iterative and the output from the reduce step forms the input to the next map step, how should you preserve pages which have no incoming links?
+
+> **Answer**: You should produce an additional key-value pair from the map step which denotes the existence of a page and records its outgoing links. The job diagram has been updated to reflect this. 
+> **Note**: Choosing a control character for the start of these values makes them easier to differentiate from those pairs which represent links.
+
+**Question**: I am on Windows and PuTTy for ssh. What should I do about the `.pem` file?
+
+> **Answer**: The process is slightly different on windows, involving converting the key to a different format. The process is described [here](https://linuxacademy.com/blog/linux/connect-to-amazon-ec2-using-putty-private-key-on-windows/).
+> **Note**: Where the tutorial says to use the user `root`, you must instead use the user `ubuntu`.
+
+> **Alternative Answer**: You may use PuTTy to ssh into `linux.cs.ncl.ac.uk`, using your university credentials, and perform the coursework there. 
+> **Note**: This will require placing the `.pem` file and project sources in your network home folder.
+
+**Question**: How do I output values from the map and reduce methods?
+
+> **Answer**: You should use the `Context` object ([documentation](https://hadoop.apache.org/docs/r1.2.1/api/org/apache/hadoop/mapreduce/TaskInputOutputContext.html)). Specifically the `write([key], [value])` method. A Context is the main form of communication between steps in the Hadoop API.
 
 
